@@ -1,0 +1,126 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    li {
+        padding: 15px;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    nav {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        margin-top: 49px;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 100vh;
+    }
+
+    #Home {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: url('imagens/paisagem.jpg') no-repeat center center fixed;
+        background-size: cover;
+
+    }
+
+    #School {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: blueviolet;
+        flex-direction: column;
+    }
+
+    #About {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: gray ;
+        display: block;
+    }
+
+
+    footer {
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
+    }
+
+    a:hover {
+        color: red;
+        font-size: x-large;
+        text-decoration: underline
+    }
+
+    table,
+    th,
+    td {
+        border: 2px solid white;
+        border-collapse: collapse;
+        padding: 5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    td {
+        background-color: white;
+        color: black;
+    }
+
+    #imagem {
+        width: 400px;
+        height: 300px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-top: 7px;
+    }
+
+    .corpo {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    p {
+        text-align: justify;
+        margin-bottom: 10px;
+    }
