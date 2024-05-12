@@ -1,0 +1,391 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav {
+    font-family: "Poppins";
+    background-color: darkblue;
+    color: white;
+    justify-content: space-between;
+    /* Torna os item mais flexiveis */
+    display: flex;
+    /* Cria espaçamento entre os itens */
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #logo_nav {
+    width: 160px;
+    margin-top: -20px;
+    margin-left: 50px;
+    margin-bottom: -12px;
+}
+
+nav .nav-link ul {
+    margin-right: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-link ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+nav .nav-login a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+a:hover {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.292);
+    transition: all 0.2s ease-in;
+}
+
+a:not(hover) {
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.secao {
+    font-family: "Poppins";
+    border-bottom: solid 5px aliceblue;
+    height: 100%;
+    margin-top: -5px;
+}
+
+.content-secao {
+    margin-left: 20px;
+    color: white;
+}
+
+#id-secao1 {
+    position: relative;
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(14, 77, 76);
+    filter: opacity(100%);
+}
+
+#id-secao1::before{
+    background: url("../img/futebol.jpg");
+    content: "";
+    filter: blur(10px) brightness(80%);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#id-secao2 {
+    position: relative;
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(14, 77, 76);
+    filter: opacity(100%);
+}
+
+#id-secao2::before{
+    background: url("../img/basquete.webp");
+    content: "";
+    filter: blur(10px) brightness(80%);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#id-secao3 {
+    position: relative;
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(14, 77, 76);
+    filter: opacity(100%);
+}
+
+#id-secao3::before{
+    background: url("../img/futebol-americano.webp");
+    content: "";
+    filter: blur(10px) brightness(80%);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#id-secao4 {
+    position: relative;
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(14, 77, 76);
+    filter: opacity(100%);
+}
+
+#id-secao4::before{
+    background: url("../img/ufc.jpg");
+    content: "";
+    filter: blur(10px) brightness(80%);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+footer {
+    font-family: "Poppins";
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    /* permanecer fixo independente da rolagem da pagina */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#login{
+    left: 0;
+    right: 0;
+    position: fixed;
+    background: url("../img/imagem.jpg") repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+#login form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    color: white;
+    width: 320px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#login form::after, #login form::before{
+    content:'';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, red,blue,red,blue,blue,red,blue,red,red,blue,red,blue,blue,red,blue,red);
+    background-size: 1500%;
+    border-radius: 8px;
+    animation: animar 10s linear infinite;
+}
+
+@keyframes animar {
+    0%{
+        background-position: 0 ;
+    }
+
+    100%{
+        background-position: 100%;
+    }
+}
+
+.dados form::after {
+    filter: blur(100px)
+}
+
+.dados label:hover{
+    transition: 0.2s all ease-in;
+    transition: 0.4s all ease-in-out;
+    font-size: large
+}
+
+.dados label:not(hover){
+    transition: 0.4s all ease-in-out;
+}
+
+.dados input:hover{
+    transition: 0.2s all ease-in;
+    transition: 0.4s all ease-in-out;
+    padding: 9px;
+}
+
+.dados input:not(hover){
+    transition: 0.4s all ease-in-out;
+}
+
+.dados .botao1 button:hover,.dados .botao2 a:hover{
+    transition: 0.2s all ease-in;
+    transition: 0.4s all ease-in-out;
+    padding: 7px 135px 7px;
+}
+
+.dados .botao1 button:not(hover),.dados .botao2 a:not(hover){
+    transition: 0.4s all ease-in-out;
+}
+    
+
+.dados input {
+    width: 90%;
+    padding: 6px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.dados{
+    font-family: "Poppins";
+}
+
+.dados p{
+    text-align: center;
+}
+#email-sms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+#email-sms label {
+    margin-left: 45px;
+}
+
+.botao1,.botao2{
+    display: flex;
+    justify-content: center;
+}
+
+.botao1 button,.botao2 a{
+    font-family: "Poppins";
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px 130px 5px;
+}
+
+ .dados .botao1 button{
+    color: white;
+    font-family: "Poppins";
+    border-radius: 5px;
+    border: 1px solid blue;
+    background-color: rgb(17, 17, 175);
+}
+
+.dados .botao2 a{
+    font-size: 14px;
+    padding: 5px 125px 5px;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.652);
+}
+
+
+#contato{
+    background: url("../img/imagem.jpg") repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+#forms {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#forms h1 {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+#forms form {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#forms label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#forms input[type="text"],
+#forms input[type="email"],
+#forms input[type="message"],
+#forms input[type="number"],
+#forms input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#forms input[type="text"]:focus,
+#forms input[type="email"]:focus,
+#forms input[type="message"]:focus,
+#forms input[type="number"]:focus,
+#forms input[type="password"]:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 5px #af4c4c;
+}
+
+#forms .botao1 button{
+    color: white;
+    font-family: "Poppins";
+    border-radius: 5px;
+    border: 1px solid blue;
+    background-color: rgb(17, 17, 175);
+}
+
+#forms .botao2 a{
+    font-size: 14px;
+    padding: 5px 125px 5px;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.652);
+}

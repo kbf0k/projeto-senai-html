@@ -1,0 +1,3 @@
+Data: 07/05/2024
+Dupla: Kaique Ferreira / João Pedro
+Atividade: Página com navegação de seções
