@@ -47,6 +47,8 @@ nav .nav-login a {
 }
 
 a:hover {
+    font-size: 18px;
+    padding: 5px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.292);
     transition: all 0.2s ease-in;
@@ -66,6 +68,8 @@ a:not(hover) {
 }
 
 .content-secao {
+    text-align: center;
+    margin-top: 200px;
     margin-left: 20px;
     color: white;
 }
@@ -75,14 +79,14 @@ a:not(hover) {
     display: block;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(14, 77, 76);
+    background-color: black;
     filter: opacity(100%);
 }
 
 #id-secao1::before{
     background: url("../img/futebol.jpg");
     content: "";
-    filter: blur(10px) brightness(80%);
+    filter: blur(10px) brightness(40%);
     position: absolute;
     background-size: cover;
     top: 0;
@@ -97,14 +101,14 @@ a:not(hover) {
     display: block;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(14, 77, 76);
+    background-color: black;
     filter: opacity(100%);
 }
 
 #id-secao2::before{
     background: url("../img/basquete.webp");
     content: "";
-    filter: blur(10px) brightness(80%);
+    filter: blur(10px) brightness(40%);
     position: absolute;
     background-size: cover;
     top: 0;
@@ -119,14 +123,14 @@ a:not(hover) {
     display: block;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(14, 77, 76);
+    background-color: black;
     filter: opacity(100%);
 }
 
 #id-secao3::before{
     background: url("../img/futebol-americano.webp");
     content: "";
-    filter: blur(10px) brightness(80%);
+    filter: blur(10px) brightness(40%);
     position: absolute;
     background-size: cover;
     top: 0;
@@ -141,14 +145,14 @@ a:not(hover) {
     display: block;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(14, 77, 76);
+    background-color: black;
     filter: opacity(100%);
 }
 
 #id-secao4::before{
     background: url("../img/ufc.jpg");
     content: "";
-    filter: blur(10px) brightness(80%);
+    filter: blur(10px) brightness(40%);
     position: absolute;
     background-size: cover;
     top: 0;
@@ -261,6 +265,24 @@ footer a {
     border-radius: 5px;
 }
 
+.dados input[type="text"],
+.dados input[type="password"] {
+    width: 90%;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.dados input[type="text"]:focus,
+.dados input[type="password"]:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: 0 0 5px black;
+}
+
+
+
 .dados{
     font-family: "Poppins";
 }
@@ -268,6 +290,7 @@ footer a {
 .dados p{
     text-align: center;
 }
+
 #email-sms{
     display: flex;
     flex-direction: row;
@@ -303,7 +326,7 @@ footer a {
 
 .dados .botao2 a{
     font-size: 14px;
-    padding: 5px 125px 5px;
+    padding: 5px 130px 5px;
     text-decoration: none;
     color: white;
     font-family: "Poppins";
@@ -314,14 +337,16 @@ footer a {
 
 
 #contato{
+    display: flex;
+    justify-content: center;
     background: url("../img/imagem.jpg") repeat center center fixed;
     background-size: cover;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(100px);
 }
 
 #forms {
+    margin-top: -3px;
     width: 80%;
-    margin: 0 auto;
     padding: 50px 0;
     text-align: center;
 }
@@ -331,8 +356,6 @@ footer a {
     text-transform: uppercase;
     color: white;
     font-size: 50px;
-    margin-bottom: 30px;
-    margin-top: 50px;
 }
 
 #forms form {
