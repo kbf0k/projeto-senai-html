@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.index header {
+    background-color: white;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+}
+
+#logo img {
+    width: 320px;
+    position: fixed;
+    top: 15px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.index ul {
+    margin-right: 30px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    list-style-type: none;
+}
+
+.index li {
+    margin-left: 30px;
+    margin-right: 80px;
+}
+
+.index li a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.index li a:hover {
+    filter: brightness(0.8);
+    color: red;
+    font-size: 20px;
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+.index li a:not(:hover) {
+    filter: brightness(0.8);
+    color: black;
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.Home {
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Home::before {
+    content: "";
+    background: url('img/morumbi.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Home a {
+    text-decoration: none;
+    margin-bottom: 420px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0 black;
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.Home a:hover {
+    color: red;
+    font-size: 55px;
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.Home a:not(:hover) {
+    font-size: 45px;
+    transition: all 0.4s ease-in-out;
+}
+
+#video-titulo iframe {
+    position: fixed;
+    width: 800px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#video-titulo iframe:hover {
+    width: 850px;
+    height: 450px;
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+#video-titulo iframe:not(:hover) {
+    width: 800px;
+    height: 400px;
+    transition: all 0.4s ease-in-out;
+}
+
+.neon {
+    margin-top: 150px;
+    position: fixed;
+    width: 772px;
+    height: 372px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.neon:hover {
+    width: 822px;
+    height: 422px;
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+.neon:not(hover) {
+    width: 772px;
+    height: 372px;
+    transition: all 0.4s ease-in-out;
+}
+
+.neon::before,
+.neon::after {
+    position: absolute;
+    content: '';
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ff0000, #ff0000a1, #ff0000, #ff0000a1);
+    background-size: 300%;
+    border-radius: 10px;
+    animation: animar 6s linear alternate infinite;
+}
+
+@keyframes animar {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+.neon::after {
+    filter: blur(100px)
+}
+
+.Sobre header {
+    background-color: black;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+}
+
+.Sobre header::before {
+    content: "";
+    background: url('img/saopaulo.webp') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(50%) blur(20px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Sobre ul {
+    margin-right: 30px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    list-style-type: none;
+}
+
+.Sobre li {
+    margin-left: 30px;
+    margin-right: 80px;
+}
+
+.Sobre li a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.Sobre li a:hover {
+    filter: brightness(0.8);
+    color: red;
+    font-size: 20px;
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+.Sobre li a:not(:hover) {
+    filter: brightness(0.8);
+    color: white;
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.Home2 {
+    background-color: black;
+    filter: opacity(100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Home2::before {
+    content: "";
+    background: url('img/saopaulo.webp') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(50%) blur(20px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+#titulo h1 {
+    margin-top: 50px;
+    text-decoration: none;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0 black;
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+#titulo h1:hover {
+    font-size: 90px;
+    color: red;
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+#titulo h1:not(:hover) {
+    font-size: 80px;
+    transition: all 0.4s ease-in-out;
+}
+
+#titulo ul {
+    margin-top: 25px;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+#titulo li {
+    margin-left: 30px;
+    margin-right: 80px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#titulo li a {
+    margin-top: 50px;
+    color: red;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#titulo li a:hover {
+    font-size: 25px;
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+#titulo li a:not(:hover) {
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.morumbi,
+.calleri,
+.bandeira {
+    margin-top: 100px;
+    height: 300px;
+    width: 400px;
+    padding-inline-start: 15px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.morumbi:hover,
+.calleri:hover,
+.bandeira:hover {
+    height: 330px;
+    width: 430px;
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+.morumbi:not(:hover),
+.calleri:not(:hover),
+.bandeira:not(:hover) {
+    height: 300px;
+    width: 400px;
+    transition: all 0.4s ease-in-out;
+}
+
+.Contato header {
+    background-color: white;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+}
+
+#logo img {
+    width: 320px;
+    position: fixed;
+    top: 15px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.Contato ul {
+    margin-right: 30px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    list-style-type: none;
+}
+
+.Contato li {
+    margin-left: 30px;
+    margin-right: 80px;
+}
+
+.Contato li a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.Contato li a:hover {
+    filter: brightness(0.8);
+    color: red;
+    font-size: 20px;
+    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
+}
+
+.Contato li a:not(:hover) {
+    filter: brightness(0.8);
+    color: black;
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.Home3{
+    background-color: black;
+    filter: opacity(100%);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home3 iframe{
+    width: 1600px;
+    height: 379px;
+}
+
+.Home3::before {
+    content: "";
+    background: url('img/bandeira.webp') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(50%) blur(20px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#forms {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#forms h1 {
+    text-transform: uppercase;
+    text-shadow: black 4px 4px 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+form {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="message"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff000083;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="message"]:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 5px #af4c4c;
+}
