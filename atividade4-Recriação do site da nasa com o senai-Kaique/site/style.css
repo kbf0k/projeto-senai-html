@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#logo img {
+    width: 410px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+ul {
+    margin-top: -28px;
+    font-size: 13px;
+    margin-right: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    padding: 20px
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li :hover {
+    filter: brightness(0.8);
+    color: white;
+}
+
+nav {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+
+#Home {
+    background: url('img/fundo.jpg') no-repeat center center fixed;
+    background: cover;
+}
+
+#titulo {
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 120px;
+    max-width: 800px;
+}
+
+#saibamais {
+    font-size: 15px;
+    margin-top: 250px;
+    position: fixed
+}
+
+section div a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+
+#Home2 {
+    position: relative;
+    background-color: white;
+    height: 150vh;
+}
+
+.corpo {
+    display: block;
+    color: black;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 225px;
+}
+
+.imagem {
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+
+.corpo h2 {
+    margin-top: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+
+
+.corpo p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.astronauta1,
+.astronauta2,
+.astronauta3 {
+    height: 200px;
+    width: 300px;
+    margin-bottom: -110px;
+    margin-top: 50px;
+    padding-inline-start: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    margin-right: 1375px;
+}
